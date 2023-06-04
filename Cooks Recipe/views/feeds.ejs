@@ -1,0 +1,30 @@
+<div>
+    Type : <%= data.results[0].type %>
+    HAHe: <%= data.results[0].item.instructions %>
+    <embed src="<%= data.results[0].item.original_video_url %>">
+</div>
+<% for(let i=1; i < 8;i++) { %>
+<div>
+    Type: <%= data.results[i].type %>
+    Name: <%= data.results[i].name %>
+</div>
+<% } %>
+<!--
+<body>
+    <%= id %>
+    
+    <script src="/js/apicall.js" type="text/javascript">
+    </script>
+    <p id="123"></p>
+    <script defer>
+        //const final = JSON.parse(str);
+        var functionality = "<%= functionality %>";
+        if(functionality === 'getRecipeList')
+        {
+            var from = "<%= from %>";
+            var tag = "<%= tag %>";
+            getRecipeList(from,tag);
+        }
+    </script>
+</body>
+-->

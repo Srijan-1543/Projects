@@ -1,0 +1,38 @@
+.feed{
+    position: relative;
+  }
+.feed .overlay{
+    position:absolute;
+    bottom:0;
+    right:0;
+    left:100%;
+    height:100%;
+    width:0;
+    background-color:black;
+    overflow: hidden;
+    transition:0.6s;
+    opacity:0.6;
+    z-index: 1;
+  }
+  .feed:hover .overlay{
+    width: 50%;
+    left: 50%;
+    
+  }
+  
+  .feed:hover img{
+  
+    -webkit-filter: blur(3px);
+    filter: blur(2px);
+    transition: 0.6s;
+  }
+  
+  
+  .overlay h4{
+   position:absolute;
+    color:white;
+    top:15%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+  }

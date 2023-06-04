@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/liststyles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/apicall.js">
+    </script>
+</head>
+<body>
+    <div id="preloader"> <div id="preloadtext"><p><Strong>Cooking . .</Strong></p></div> </div>
+<nav>
+<ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="/list">Browse</a></li>
+  <li><a >About us</a></li>
+  <li id="srch">
+    <form id="search" action="/list" method="get">
+    <input type="hidden" name="from" value="0">
+    <input name="q" type="text" class="searchTerm" placeholder="Search...">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+    </form></li>
+  <li style="float:right" id="profile"><a href="/auth/dashboard">Profile</a></li>
+</ul>
+</nav>
+    <div class="Browse">
+    <h1><strong>Browse through our Catalogue to find your favourite recipes</strong></h1>
+</div>
+<br>
+<div class="Catalogue">
+    <div class="card">
+        <h2 class="card-title"><strong>Catalogue</strong></h2>
+        <div class="card-body">
+            <ul id="lists">
+                <!--
+                <li> 
+                    <img src="../images/istockphoto-1356961232-170667a.jpg">
+                    <div id="recipesaved">
+                        <a><strong>Recipe name</strong></a>
+                        </div>
+                </li>
+                <li> 
+                    <img src="../images/istockphoto-1356961232-170667a.jpg">
+                    <div id="recipesaved">
+                        <a><strong>Recipe name</strong></a>
+                        </div>
+                </li>
+                <li> 
+                    <img src="../images/istockphoto-1356961232-170667a.jpg">
+                    <div id="recipesaved">
+                        <a><strong>Recipe name</strong></a>
+                        
+                        </div>
+                </li>
+                <li> 
+                    <img src="../images/istockphoto-1356961232-170667a.jpg">
+                    <div id="recipesaved">
+                        <a><strong>Recipe name</strong></a>
+                   
+                    </div>
+                </li>
+                <li> 
+                    <img src="../images/istockphoto-1356961232-170667a.jpg">
+                    <div id="recipesaved">
+                        <a><strong>Recipe name</strong></a>
+                    
+                    </div>
+                </li>
+            -->
+            </ul>
+    </div>
+    </div>
+</div>
+<script>
+  </script>
+<script defer>
+    var from = "<%= from %>";
+    var tag = "<%= tag %>";
+    var q = "<%= q %>";
+    getRecipeList(from,tag,q);
+</script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!--
+<body>
+<%= id %>
+
+<script src="/js/apicall.js" type="text/javascript">
+</script>
+<div id="name"></div>
+<br>
+<div id="thumbnail_url"></div>
+<br>
+<div id="instructions"></div>
+<br>
+<div id="ingredients"></div>
+<br>
+<div id="description"></div>
+<br>
+<div id="yields"></div>
+<br>
+<div id="nutrition"></div>
+<br>
+<div id="tags"></div>
+<br>
+<div id="video_url"></div>
+<script defer>
+    //const final = JSON.parse(str);
+    var functionality = "<%= functionality %>";
+    if(functionality === 'getRecipeDetails')
+    {
+        var id = "<%= id %>";
+        getRecipe(id);
+    }
+</script>
+</body>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recipe</title>
+    <link rel="stylesheet" href="/css/recipestyles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+<script type="text/javascript" src="/js/apicall.js"></script>
+</head>
+<body>
+  <div id="preloader"> <div id="preloadtext"><p><Strong>Cooking . .</Strong></p></div> </div>
+<nav>
+<ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="/list">Browse</a></li>
+  <li><a >About us</a></li>
+  <li id="srch">
+    <form id="search" action="/list" method="get">
+    <input type="hidden" name="from" value="0">
+    <input name="q" type="text" class="searchTerm" placeholder="Search...">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+    </form></li>
+  <li style="float:right" id="profile"><a href="/auth/dashboard">Profile</a></li>
+</ul>
+</nav>
+<div id="recipe" class="flex-container">
+    <div class="recipe-content">
+      <div class="card" >
+      <div class="card-title">
+     <p><strong>Ingredients</strong></p>
+
+     <br>
+     </div>
+     <div class="card-body" >
+     <ul id="ingredients">
+     <!--
+     <li> 2 tablespoons unsalted butter</li>
+     <li> 1 leek, white and light green parts only, thinly sliced</li>
+     <li> 1 large carrot, small diced</li>
+     <li> 2 garlic cloves, roughly chopped</li>
+     <li> 2 Yukon gold potatoes, cut into ½-inch pieces</li>
+     <li> 1 teaspoon ground turmeric</li>
+     <li> 1 tablespoon yellow curry powder</li>
+     <li> 4 cups (32 ounces) chicken broth</li>
+     <li> 2 10.5-ounce cans of Campbell's® Cream of Chicken Soup</li>
+     <li> 2 tablespoons chopped fresh parsley, divided</li>
+     <li> Kosher salt, to taste</li>
+     <li> Freshly ground black pepper, to taste</li>
+     -->
+     </ul>
+     <br>
+     
+     </div>
+   
+    </div>
+    </div>
+    <div class="recipe-card">
+      <div class="card" >
+        <img class="card-img-top" src="" id="thumbnail_url" alt="recipe image">
+        <div class="card-body" >
+          <div class="card-title">
+            <h5 id="name"></h5>
+            <form action="/save" method="post" id="save">
+            <input type="hidden" name="id" value="<%= id %>">
+            <button class="saved" type="submit">save <i class="fa fa-bookmark" aria-hidden="true"></i></button>
+            </form>
+        </div>
+          <p class="card-text" id="description"></p>
+          <br>
+          <ul id="tags">
+            <!-- 
+            <li>Stove top</li>
+            <li> Lunch</li>
+            <li>American</li>
+            <li>Brunch</li>
+            <li>High Fibre</li>
+            -->
+          </ul>
+        </div>
+        <div class="card-footer">
+          <p id="yields"></p>
+          <i class="fa fa-clock-o" aria-hidden="true" > 1-1.5 hrs</i>
+        </div>
+      </div>
+    </div>
+</div>
+<div id="recipe-ins" class="flex-container">
+  <div class="instructions">
+    <div class="card">
+      <div class="card-body">
+            <br>
+          <p><strong>Instructions</strong></p>
+          <br>
+          <ol id="instructions">
+          <!--  
+          <li> Melt the butter in a large pot over medium-high heat. When the butter is foaming, add the leeks, carrots, and garlic and cook, stirring frequently, until softened, 6–7 minutes. Transfer half of the sautéed vegetables to a small bowl.</li>
+          <li> Add the potatoes, turmeric, curry powder, and chicken broth to the pot with the remaining vegetables. Bring to a boil over high heat, then reduce the heat to medium-low and simmer for 8–10 minutes, or until the potatoes are tender.</li>
+          <li> Transfer the soup to a standing blender or (use an immersion blender directly in the pot) and purée until smooth (work in batches if necessary and let cool slightly before blending the liquid). Return the soup to the pot.</li>
+          <li> Stir in the Campbell's® Cream of Chicken Soup and bring to a boil.</li>
+          <li> Remove the pot from the heat and stir in the reserved vegetables and half of the parsley. Season with salt and pepper to taste.</li>
+          <li> Ladle the soup into bowls and garnish with the remaining parsley.</li>
+          <li> Enjoy!</li>
+          -->
+          </ol>
+     </div>
+    </div>
+  </div>
+  <div class="video">
+  </div>
+</div>
+<div id="comments" class="flex-container">
+    <div class="comment">
+        <div id="comment-card" class="card">
+          <div class="card-body">
+            <h4><strong>Comments</strong></h4>
+            
+            <br>
+            <div class="cbox">
+            <form action="/comment" method="post" id="postcomment">
+            <input type="range" name="rating" id="rating" min="1" max="5">
+            <input type="hidden" name="cid" value="<%= id %>" />
+            <textarea name="comments" id="commentbox" placeholder="Post your comments here..."></textarea>
+            <input type="submit" id="post" value="post">
+          </form> 
+        </div>
+          <br>
+          <br>
+          <ul id="comment-list">
+            <% for(let i=0; i < data.length; i++) { %>
+              <li>
+                <p><strong><%= data[i].name %></strong> <span style="float:right; font-size:1em;">User rating: <%= data[i].rating %></span></p>
+                <p><%= data[i].review %></p>
+              </li>
+            <% } %>
+            <!--
+          <li>
+            <p><strong>Ackshay</strong>  <span style="float:right; font-size:1em;"> User rating: 2 stars</span></p> 
+            <p>It actually tasted terrible and the aroma was very bad as well</p>
+          </li>
+          -->
+          </ul>
+          </div>
+      
+        </div>
+    </div>
+    <div class="related">
+        <!--
+      <div class="card"> 
+        <ul>
+          <li>related recipes</li>
+          <li>related recipes</li>
+          <li>related recipes</li>
+          <li>related recipes</li>
+          <li>related recipes</li>
+        </ul>
+      </div>
+        -->
+    </div>
+</div>
+ <footer></footer>
+ <script defer>
+    var id = "<%= id %>";
+    getRecipe(id);
+ </script>
+</body>
+</html>

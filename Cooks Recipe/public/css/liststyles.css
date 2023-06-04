@@ -1,0 +1,194 @@
+nav ul {
+    position: fixed;
+    top: 0;
+    width:100%;
+    left:0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2d2d2d;
+    z-index: 100;
+  
+  }
+  
+  
+  
+  nav li  {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Indie Flower', cursive;
+    font-size:1.1em;
+  }
+  
+  nav li:hover {
+    
+    background-color:#FFA559;
+    color:#454545;
+  }
+   
+  nav ul #search{
+    display: flex;
+    padding:0;
+    height:100%;
+    margin:0;
+  }
+  
+  #srch {
+    height:36px;
+    padding:3px;
+    width:20%;
+  }
+  .searchTerm {
+    width: 100%;
+     border-right: none;
+    height: 32px;
+    outline: none;
+    color:#454545;
+  }
+  
+  .search {
+    height:52px;
+  }
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    background: #f56c17;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .searchbutton:hover{
+    transform: scale(-20%);
+  }
+  nav ul #srch:hover{
+    background-color: #454545;
+    color:white;
+  }
+  #profile {
+    background-color: #FF6000;
+    
+  }
+
+ body .Browse{
+    height:25vh;
+    width:100%;
+    font-family:'Indie Flower', cursive;
+    color:#2d2d2d;
+    text-align: center;
+    margin:0;
+    padding-top: 100px;
+    font-size:1.3em;
+  }
+
+  body{
+    margin-top: 52px;
+    margin:0;
+    background-color: #FFA559;
+    background-image: url("https://st4.depositphotos.com/3047297/26642/i/450/depositphotos_266420092-stock-photo-orange-pastel-on-paper-background.jpg");
+    position:relative;
+    height:auto;
+
+
+  }
+ 
+
+  .Catalogue{
+    height:auto;
+    width: 90%;
+    margin:50px;
+  }
+
+  .Catalogue .card{
+
+    height:auto;
+    width:auto;
+    background-image:url("https://img.freepik.com/premium-photo/light-paper-texture-with-empty-space-old-parchment-as-background_84485-2384.jpg");
+  }
+
+.Catalogue h2{
+    font-family:'Indie Flower', cursive;
+    color:#2d2d2d;
+    text-align: center;
+    font-size: 2em;
+    padding:10px;
+}
+
+.Catalogue ul {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 50px;
+    list-style-type: none;
+}
+
+.Catalogue ul img{ 
+      
+     height:200px;
+     width:100%;
+     padding:10px;
+     background-color: #ffff;
+}
+nav li a{
+  text-decoration: none;
+  color:#FFff;
+}
+
+nav li a:hover{
+  color:#2d2d2d;
+}
+.Catalogue .card li {
+    height :300px;
+    width:200px;
+    margin:20px;
+    box-shadow: 5px 5px 7px 5px rgba(0, 0, 0, 0.2);
+  
+}
+
+.Catalogue .card li .card-body{
+
+  color:#2d2d2d;
+  font-family:'Indie flower',cursive;
+  padding:8px;
+  font-size:1.2em;
+  padding-top:14px;
+  text-align:center;
+  background-color:#ffff;
+}
+
+#preloader{
+  background: #FFE6C7 url("../img/giphy-1.gif") no-repeat center center;
+  background-size:20%;
+  height:100vh;
+  width: 100%;
+  position:fixed;
+  z-index: 120;
+}
+
+#preloadtext {
+
+z-index:100;
+position:absolute;
+top:60%;
+left:45%;
+z-index:130;
+}
+
+#preloadtext p{
+   
+  font-size: 45px;
+  color:#2d2d2d;
+  font-family:'Indie flower',cursive;
+}
+
+#preloader.display {
+
+  visibility: visible;
+}

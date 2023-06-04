@@ -1,0 +1,427 @@
+nav ul {
+  position: fixed;
+  top: 0;
+  width:100%;
+  left:0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2d2d2d;
+  z-index: 100;
+
+}
+
+
+
+nav li  {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Indie Flower', cursive;
+  font-style: bold;
+}
+
+nav li:hover {
+  
+  background-color:#FFA559;
+  color:#454545;
+}
+ 
+nav ul #search{
+  display: flex;
+  padding:0;
+  height:100%;
+  margin:0;
+}
+
+#srch {
+  height:52px;
+  padding:10px;
+  width:20%;
+}
+.searchTerm {
+  width: 100%;
+   border-right: none;
+  padding: 5px;
+  height: 36px;
+  outline: none;
+  color:#454545;
+}
+
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  background: #f56c17;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.searchbutton:hover{
+  transform: scale(-20%);
+}
+nav ul #srch:hover{
+  background-color: #454545;
+  color:white;
+}
+#profile {
+  background-color: #FF6000;
+  
+}
+  body{
+    background-color: #FFE6C7;
+    margin:0;
+  }
+
+  
+footer {
+    background-color:#2d2d2d;
+    height: 10px;
+    margin-bottom: 0;
+    width:100%;
+  }
+
+  #recipe {
+    display: flex;
+    justify-content: space-between;
+    height: 800px;
+    margin: 0;
+    background-color: #FFE6C7;
+    background-image: url("https://st4.depositphotos.com/3047297/26642/i/450/depositphotos_266420092-stock-photo-orange-pastel-on-paper-background.jpg");
+    margin-top: 50px;
+  }  
+
+  .recipe-content{
+    height: auto;
+    width:60%;
+    margin:40px;
+    border:0;
+    
+  }
+
+  .recipe-content .card{
+     height:95%;
+     width:95%;
+   
+    padding:20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: url("https://img.freepik.com/premium-photo/light-paper-texture-with-empty-space-old-parchment-as-background_84485-2384.jpg");
+    color:#454545;
+    
+}
+
+  .recipe-card{
+    height: auto;
+    width:40%;
+    margin-right:0;
+    background-image: url("https://img.freepik.com/premium-vector/bakery-cooking-seamless-pattern_67074-760.jpg?size=626&ext=jpg&ga=GA1.2.1677821444.1668980915&semt=ais");
+  }
+
+  .recipe-card .card{
+    height:auto;
+    width: 80%;
+    margin-top: 70px;
+    margin-left:-50px;
+    border-color:#FF6000;
+    border-radius: 15px;
+    border-left: 0;
+    border-top:0;
+    border-width: 3px;
+    box-shadow: 8px 8px 7px 5px rgba(0, 0, 0, 0.2);
+    animation: 1s ease-out 0s 1 slideInright;
+    
+  }
+
+  .card img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+
+ 
+  
+  .recipe-content li{
+
+    font-size: 1.1em;
+
+  }
+
+  @keyframes slideInright {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInleft {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+
+
+#comments {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    margin: 0;
+    background-color: #FFE6C7;
+    background-image: url("https://st4.depositphotos.com/3047297/26642/i/450/depositphotos_266420092-stock-photo-orange-pastel-on-paper-background.jpg");
+}
+
+#comments .comment{
+    height: auto;
+    width:60%;
+    margin:40px;
+    border:0;
+}
+
+#comments .related{
+    height: auto;
+    width:40%;
+    margin-right:0;
+    background-image: url("https://img.freepik.com/premium-vector/bakery-cooking-seamless-pattern_67074-760.jpg?size=626&ext=jpg&ga=GA1.2.1677821444.1668980915&semt=ais");
+}
+#comment-card{
+  height: auto;
+  width:95%;
+  background-image: url("https://img.freepik.com/premium-photo/light-paper-texture-with-empty-space-old-parchment-as-background_84485-2384.jpg");
+}
+ 
+#comment-card .cbox {
+
+  height:120px;
+  width:95%;
+}
+#comment-card .cbox #commentbox{
+
+      font-family:'Indie flower',cursive;
+      font-size: 1.1em;
+      color: #454545;
+      background-color: #ffffff;
+      width:100%;
+      height: 100px;
+      border-color: #FF6000;
+}
+
+#post{
+width: 120px;;
+float: right;
+background-color: #FF6000;
+color: #ffffff;
+
+}
+
+#comment-card .card-body h4{
+
+  font-family: 'Indie flower',cursive;
+  color:#2d2d2d;
+  font-size: 2em;
+}
+
+.checked{
+  color: #FF6000;
+}
+nav li a{
+  text-decoration: none;
+  color:#FFff;
+}
+
+nav li a:hover{
+  color:#2d2d2d;
+}
+#recipe .recipe-card .card-footer p{
+
+    display: inline-block;
+    
+  }
+
+  #recipe .recipe-card .card-footer i{
+     
+    float: right;
+  }
+
+  #recipe .recipe-content li{
+    
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.3em;
+  }
+
+  .recipe-content .card  p {
+    text-align:center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.4em;
+}
+
+.recipe-card .card-img-top{
+
+  width:100%;
+  height:40%;
+  object-fit:fill;
+}
+
+.related .card {
+
+  height:70%;
+  width:70%;
+  margin:40px;
+  margin-left:40px;
+}
+
+#recipe-ins{
+  display: flex;
+  height: auto;
+  margin: 0;
+  background-color: #FFE6C7;
+  background-image: url("https://st4.depositphotos.com/3047297/26642/i/450/depositphotos_266420092-stock-photo-orange-pastel-on-paper-background.jpg");
+  
+}  
+
+.instructions .card{
+  height:auto;
+  width:95%;
+
+ padding:20px;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ background-image: url("https://img.freepik.com/premium-photo/light-paper-texture-with-empty-space-old-parchment-as-background_84485-2384.jpg");
+ color:#454545;
+ 
+}
+
+
+.instructions{
+  height: 90%;
+  width:60%;
+  margin:40px;
+  border:0;
+  
+}
+
+.video{
+  height: auto;
+  width:40%;
+  margin-right:0;
+  background-image: url("https://img.freepik.com/premium-vector/bakery-cooking-seamless-pattern_67074-760.jpg?size=626&ext=jpg&ga=GA1.2.1677821444.1668980915&semt=ais");
+}
+
+iframe{
+
+  margin:40px;
+}
+#recipe-ins .instructions li{
+    
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.3em;
+}
+
+.instructions .card  p {
+  text-align:center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 2.4em;
+}
+
+
+ 
+.recipe-card .card-body ul{
+
+  list-style-type:none;
+  height:10%;
+  padding-left: 0;
+
+  bottom: 0;
+}
+
+.recipe-card .card-body li{
+
+  display:inline-block;
+  background-color: #fcdcc9;
+  color:#2d2d2d;
+  border:2px solid #FF6000;
+  border-radius:13px;
+  margin: 2px;
+  padding:3px;
+  font-size: small;
+  
+}
+
+.recipe-card .card-body li:hover {
+
+  background-color: #ec772f;
+  color: #ffffff;
+}
+
+.saved{
+
+  background-color: #ffffff;
+  color:#2d2d2d;
+  border-radius: 5px;
+  border:2px solid #FF6000;
+  float: right;
+}
+
+.saved:active{
+
+  background-color: #FFA559;
+}
+
+#comments #comment-card .card-body ul{
+
+  list-style-type: none;
+  display: block;
+  height:auto;
+  width:90%;
+  
+}
+#comments #comment-card .card-body ul li{
+
+border-bottom: 1px solid #454545;
+}
+#comments #comment-card .card-body ul p{
+
+  font-size: 1.1em;
+  color: #454545;
+
+}
+#tags {
+  height: auto;
+}
+#preloader{
+  background: #FFE6C7 url("../img/giphy-1.gif") no-repeat center center;
+  background-size:20%;
+  height:100vh;
+  width: 100%;
+  position:fixed;
+  z-index: 120;
+}
+
+#preloadtext {
+
+z-index:100;
+position:absolute;
+top:60%;
+left:45%;
+z-index:130;
+}
+
+#preloadtext p{
+   
+  font-size: 45px;
+  color:#2d2d2d;
+  font-family:'Indie flower',cursive;
+}
+
+#preloader.display {
+
+  visibility: visible;
+}
