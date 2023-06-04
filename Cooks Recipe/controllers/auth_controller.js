@@ -1,6 +1,6 @@
 const User = require('../models/user');
 const Review = require('../models/reviews');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const passport = require('passport');
 
 const auth_controller = {
