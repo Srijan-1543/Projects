@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Animates</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .carousel-inner img {
+      margin: auto;
+    }
+
+    .font {
+      font-size: 20px;
+    }
+
+    body {
+      background-color: powderblue;
+      color: black;
+    }
+
+    hr {
+      background-color: royalblue;
+    }
+
+    #footer {
+			padding: 10px 10px 0px 10px;
+      text-align: center;
+			bottom: 0;
+			width: 100%;
+			height: 40px;
+			background: black;
+            color: mediumseagreen;
+            flex: 0 0 50px;
+            margin-top: auto;
+        }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">ANIMATES</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="jumbotron text-center" style="background-color:greenyellow">
+    <h3 style="color:darkslateblue">ANIME-TIER LIST</h3>
+  </div>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="https://wallpaper.dog/large/20466018.jpg" width="640px" height="200px">
+      </div>
+      <div class="item">
+        <img src="https://wallpaperaccess.com/full/56208.jpg" width="640px" height="200px">
+      </div>
+      <div class="item">
+        <img src="https://wallpaperaccess.com/full/356031.jpg" width="640px" height="200px">
+      </div>
+      <div class="item">
+        <img src="https://wallpaperaccess.com/full/3469385.jpg" width="640px" height="200px">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div><br>
+
+  <p class="font">Anime has had a big impact all over the world.Anime is the
+    Japanese take on the word "animation" and it has an unique style of
+    animation.Due to Anime's insane storytelling and well-written characters,
+    it attracts people all over the globe.So to guide them and help them start
+    of with the best the anime world has to offer,the following list is made:</p>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-sm-3">
+        <h3>ACTION/THRILLER</h3>
+        <hr>
+        <p>Death Note</p>
+        <p>Attack on Titan</p>
+        <p>Code Geass</p>
+        <p>Full Metal Alchemist Brotherhood</p>
+        <p>One Piece</p>
+        <p>Naruto</p>
+        <p>Demon Slayer</p>
+        <p>Jujutsu Kaisen</p>
+        <p>Jojo:Bizarre Adventures</p>
+        <p>Monster</p>
+      </div>
+      <div class="col-sm-3">
+        <h3>SPORTS</h3>
+        <hr>
+        <p>Haikyu!!</p>
+        <p>Kuroko's Basketball</p>
+        <p>Cross Game</p>
+        <p>Chihayafuru</p>
+        <p>Ping Pong The Animation</p>
+        <p>Free! - Iwatobi Swim Club</p>
+        <p>Tomorrow's Joe</p>
+        <p>Slam Dunk</p>
+        <p>Fighting Spirit</p>
+        <p>Run With The Wind</p>
+      </div>
+      <div class="col-sm-3">
+        <h3>ROM-COM</h3>
+        <hr>
+        <p>Kaguya-sama: Love is War</p>
+        <p>Horimiya</p>
+        <p>My Dress-Up Darling</p>
+        <p>Your Lie in April</p>
+        <p>Fruits Basket</p>
+        <p>Clannad</p>
+        <p>Toradora!</p>
+        <p>Nisekoi</p>
+        <p>Maid Sama!</p>
+        <p>Your Name</p>
+      </div>
+      <div class="col-sm-3">
+        <h3>HORROR</h3>
+        <hr>
+        <p>Perfect Blue</p>
+        <p>Shiki</p>
+        <p>Yami Shibai</p>
+        <p>Devilman Crybaby</p>
+        <p>Parasyte</p>
+        <p>Elfen Lied</p>
+        <p>Ghost Hunt</p>
+        <p>When They Cry</p>
+        <p>The Promised Neverland</p>
+        <p>Another</p>
+      </div>
+    </div>
+  </div>
+</body>
+<footer id="footer">
+  <h4>Copyright © 2022 ANIMATES - ALL RIGHTS RESERVED</h4>
+</footer>
+
+</html>
